@@ -39,4 +39,25 @@
 
 .flex{
   display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+  width: 0;             
+}
+
+body::-webkit-scrollbar-track {
+  background: orange;  
+  display: none;    
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue;  
+  border-radius: 20px;   
+  display: none;  
 }

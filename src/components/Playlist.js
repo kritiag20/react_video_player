@@ -1,28 +1,24 @@
 import React from "react";
-import {
-  Button,
-  DataWrapper,
-  Grid,
-  Image,
-  Item,
-  SubText,
-  Title,
-} from "../assets/main";
 import videoList from "../assets/data";
+import { DataWrapper, Item, LayoutList, ListWrap } from "../assets/main";
+import { Grid, Heading, Image, ItemTitle, SubText } from "../assets/styles";
 import nFormatter from "./common";
 
-function Playlist() {
+function Playlist({ setselVideo }) {
+  const handleVideo = (data) => {
+    setselVideo(data);
+  };
+
   return (
-    <div>
-      <p>Videos List</p>
-      {}
-      <div>
+    <LayoutList>
+      <Heading>More Videos</Heading>
+      <ListWrap>
         <Grid>
           {videoList?.map((val) => (
-            <Item>
+            <Item onClick={() => handleVideo(val)}>
               <Image alt="Thumbnail" src={val.thumbnailUrl} />
-              <DataWrapper>
-                <Title>{val.title}</Title>
+              <DataWrapper width>
+                <ItemTitle>{val.title}</ItemTitle>
                 <SubText style={{ margin: 0 }}>
                   Published: {val.uploadTime}
                 </SubText>
@@ -35,8 +31,8 @@ function Playlist() {
         </Grid>
 
         {/* <Button>OPEN</Button> */}
-      </div>
-    </div>
+      </ListWrap>
+    </LayoutList>
   );
 }
 
