@@ -64,6 +64,29 @@ const Avatar = styled.div`
   border-radius: 50%;
   border: 1px solid #e7e7e7;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+`;
+
+const Center = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const Head = styled(Center)`
+  height: 60px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+`;
+
+const LogoWrap = styled(Center)`
+  position: relative;
+  gap: 6px;
 `;
 
 export {
@@ -74,4 +97,6 @@ export {
   LayoutVideo,
   ListWrap,
   Wrapper,
+  Head,
+  LogoWrap,
 };

@@ -6,7 +6,16 @@ const Grid = styled.div`
   gap: 16px;
 `;
 
-const Heading = styled.h3`
+const Logo = styled.p`
+  margin: 0;
+  font-size: 27px;
+  font-weight: 900;
+  font-style: italic;
+  font-family: sans-serif;
+  color: #12dfce;
+`;
+
+const VideoHeading = styled.h3`
   padding: 22px;
   margin: 0;
   font-size: 22px;
@@ -78,7 +87,8 @@ const Text = styled.p`
 export {
   Divider,
   Grid,
-  Heading,
+  Logo,
+  VideoHeading,
   Image,
   ItemTitle,
   SubHeading,

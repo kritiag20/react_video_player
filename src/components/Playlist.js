@@ -1,7 +1,13 @@
 import React from "react";
 import videoList from "../assets/data";
 import { DataWrapper, Item, LayoutList, ListWrap } from "../assets/main";
-import { Grid, Heading, Image, ItemTitle, SubText } from "../assets/styles";
+import {
+  Grid,
+  VideoHeading,
+  Image,
+  ItemTitle,
+  SubText,
+} from "../assets/styles";
 import nFormatter from "./common";
 
 function Playlist({ setselVideo }) {
@@ -11,7 +17,7 @@ function Playlist({ setselVideo }) {
 
   return (
     <LayoutList>
-      <Heading>More Videos</Heading>
+      <VideoHeading>More Videos</VideoHeading>
       <ListWrap>
         <Grid>
           {videoList?.map((val) => (
@@ -29,8 +35,6 @@ function Playlist({ setselVideo }) {
             </Item>
           ))}
         </Grid>
-
-        {/* <Button>OPEN</Button> */}
       </ListWrap>
     </LayoutList>
   );

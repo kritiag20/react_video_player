@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Video Player 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# video Player App
+![customization module for a Subway sandwich](videoPlayerSS.png)
+
+# Lighthouse Performance
+![Swiggy's Subway menu](Lighthouse.png)
+
 
 ## Available Scripts
 
